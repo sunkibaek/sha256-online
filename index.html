@@ -11,11 +11,15 @@
   <div class="container">
     <h1>SHA256 Online</h1>
 
-    <form>
-      <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter text here..."></textarea>
+    <input type="submit" id="convert" value="Convert">
+    <input type="reset" id="reset" value="Reset">
 
-      <input type="submit" value="Convert">
-    </form>
+    <div>
+      <textarea name="source" id="source" cols="30" rows="10" placeholder="Enter text here..."></textarea>
+
+      <textarea disabled="disabled" name="target" id="target" cols="30" rows="10"
+        placeholder="Enter text here..."></textarea>
+    </div>
   </div>
 
   <script src="script.js"></script>
