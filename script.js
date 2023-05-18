@@ -27,7 +27,7 @@ function main() {
       const trimmedLine = line.trim();
 
       if (trimmedLine.length === 0) {
-        return "";
+        continue;
       }
 
       const hashHex = await textToHash(trimmedLine);
